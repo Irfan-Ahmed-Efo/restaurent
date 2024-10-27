@@ -1,0 +1,72 @@
+/*for mobile devices*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  /* nav bar start here*/
+  header ul {
+    position: absolute;
+    flex-direction: column;
+    background: rgb(0, 0, 0, 0.8);
+    top: 70px;
+    right: 0;
+    align-items: center;
+    height: calc(100vh);
+    margin-right: 0;
+    width: 40%;
+  }
+  .meno-dispay {
+    display: none;
+  }
+  header .meno-bar {
+    display: block;
+    margin-right: 1rem;
+    font-size: 25px;
+  }
+  .meno {
+    display: none;
+  }
+  .meno-style {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .meno-style:hover {
+    transform: scale(1.2);
+  }
+  .cross {
+    display: none;
+  }
+  .cross-style {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .cross-style:hover {
+    rotate: 90deg;
+  }
+  /*navbar end here*/
+  /*home section start here*/
+  main {
+    padding-top: 80px;
+  }
+  .Home-section {
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+  }
+  .picture {
+    height: 50vh;
+    padding-top: 200px;
+  }
+  .picture img {
+    height: 250px;
+    width: 200px;
+  }
+  .intro {
+    height: 40vh;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  /*home section end here*/
+}

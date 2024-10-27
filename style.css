@@ -1,0 +1,100 @@
+/*common code start here*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+/*common code end here*/
+/*navbar start here*/
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 0, 0, 0.5);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 99;
+}
+header img {
+  margin-left: 2rem;
+  border-radius: 50%;
+  border: solid 2px #000;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  align-items: center;
+  margin-right: 3rem;
+}
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+header ul li {
+  padding: 0.5rem;
+  transition: background 0.1s ease;
+  border-radius: 10px;
+  cursor: pointer;
+}
+header ul li:hover {
+  background: rgb(245, 245, 245, 0.5);
+}
+
+header .meno-bar {
+  display: none;
+}
+/*navbar end here*/
+/*main start here*/
+main {
+  background-color: #27444b;
+  height: 100vh;
+  width: 100%;
+}
+/*Home sention start here*/
+.Home-section {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.picture {
+  position: relative;
+}
+.picture img {
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+.intro {
+  color: aliceblue;
+  font-size: 1.5rem;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.intro h1,
+h2,
+h3 {
+  margin-left: 8px;
+  font-style: italic;
+}
+.intro div {
+  border-left: 3px groove #ccc;
+}
+/*Home section end here*/
+/*main end here*/
